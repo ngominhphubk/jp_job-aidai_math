@@ -8,6 +8,7 @@
 html {
   background: #efefef;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -49,6 +50,10 @@ a {
 }
 .grid.wide-1000 {
     max-width: 1000px;
+    margin: 0 auto;
+}
+.grid.wide-1100 {
+    max-width: 1100px;
     margin: 0 auto;
 }
 .grid.wide-full {
@@ -940,6 +945,12 @@ a {
 .pb-75 {
   padding-bottom: 75px !important;
 }
+.pt-70 {
+  padding-top: 70px !important;
+}
+.pb-70 {
+  padding-bottom: 70px !important;
+}
 .pt-60 {
   padding-top: 60px !important;
 }
@@ -1000,6 +1011,9 @@ a {
 .pb-10 {
   padding-bottom: 10px !important;
 }
+.pl-10 {
+  padding-left: 10px !important;
+}
 /* boder */
 .bd-bottom {
   border-bottom: 1px solid;
@@ -1045,6 +1059,9 @@ a {
 .bordercl-5 {
   border-color: #eb5924 !important;
 }
+.bordercl-6 {
+  border-color: #a9a698 !important;
+}
 
 .bgcl-1 {
   background-color: #fff8d7 !important;
@@ -1052,9 +1069,29 @@ a {
 .bgcl-2 {
   background-color: #ec5a24 !important;
 }
+.bgcl-3 {
+  background: #dff4ce !important;
+}
+.bgcl-4 {
+  background: #fff8d7 !important;
+}
+.bgcl-5 {
+  background: #def2ff !important;
+}
+.bgcl-6 {
+  background: #ffe4d7 !important;
+}
+.bgcl-7 {
+  background: #eaeaea !important;
+}
+.bgcl-8 {
+  background-color: #c9daf2 !important;
+}
+
 .bgcl-white {
   background: white !important;
 }
+
 .p-relative {
   position: relative;
   z-index: 1;
@@ -1186,6 +1223,24 @@ background-size: auto 100%;
   height: 16px;
   background: url(../../assets/images/icon/orange-arg-sm.png);
 }
+.btn-large {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 55px 45px;
+  background: linear-gradient(90deg, rgba(246, 171, 59, .82), rgba(236, 73, 36, 0.82)),
+  url(../../assets/images/member_page/themes/btn-large.jpg);
+}
+.btn-large::after {
+  position: absolute;
+  width: 16px;
+  height: 10px;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  right: 60px;
+  background: url(../../assets/images/icon/white_arg.png);
+}
 /* hover */
 .hover-6:hover {
   opacity: 0.6;
@@ -1288,7 +1343,52 @@ background-size: auto 100%;
   font-weight: 700;
   font-size: 17px;
 }
-
+.member-heading {
+  display: block;
+  padding-bottom: 30px;
+  color: #eb5924;
+  border-bottom: 2px solid #eb5924;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+/* tab */
+.data-tab .tab-header .col {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #ffe6ae;
+  
+}
+.data-tab .tab-data .col {
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.data-tab-block ul li {
+  font-size: 16px;
+  margin-left: 10px;
+  list-style-type: disc;
+}
+.data-tab-block ul li a {
+  color: #000;
+  font-weight: 700;
+}
+.data-tab-block ul li a.red-link{
+  color: #e71b24;
+}
+.data-tab .row .col {
+  border-left: 2px solid #b2b2b2;
+  border-top: 2px solid #b2b2b2;
+}
+.data-tab .row .col:last-child {
+  border-right: 2px solid #b2b2b2;
+}
+.data-tab .row:last-child .col {
+  border-bottom: 2px solid #b2b2b2;
+}
 /* Header */
 .header-container .time-box {
   display: flex;
@@ -1462,6 +1562,112 @@ background-size: auto 100%;
 
 .accord-link.active::after {
   background: url(../../assets/images/icon/close-icon.png) no-repeat center center;
+}
+.accord-tab.color-box {
+  padding: 90px 0px 100px;
+}
+.accord-tab.color-box .time-box {
+  width: 100%;
+  max-width: 715px;
+  display: flex;
+  border: 1px solid #a9a698;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 700;
+}
+.accord-tab.color-box .time-box >div {
+  position: relative;
+  text-align: center;
+  height: 127px;
+  display: flex;
+  border-left: 1px solid #a9a698;
+  flex-direction: column;
+  justify-content: center;
+}
+.accord-tab.color-box .time-box >div::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  transform: translateX(-50%);
+  font-weight: 400;
+}
+.accord-tab.color-box .time-box >div:last-child:after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  transform: translateX(50%);
+  font-weight: 400;
+}
+.accord-tab.color-box.style-1 .time-box >div:nth-child(1),
+#accord1-1 .time-box >div:nth-child(1) {
+  width: 240px;
+}
+.accord-tab.color-box.style-1 .time-box >div:nth-child(1)::before,
+#accord1-1 .time-box >div:nth-child(1)::before {
+  content: "9:00";
+}
+.accord-tab.color-box.style-1 .time-box >div:nth-child(2),
+#accord1-1 .time-box >div:nth-child(2) {
+  width: 60px;
+  padding: 0px 20px;
+}
+.accord-tab.color-box.style-1 .time-box >div:nth-child(2)::before,
+#accord1-1 .time-box >div:nth-child(2)::before {
+  content: "10:00";
+}
+.accord-tab.color-box.style-1 .time-box >div:nth-child(3),
+#accord1-1 .time-box >div:nth-child(3) {
+  width: 110px;
+}
+.accord-tab.color-box.style-1 .time-box >div:nth-child(3)::before,
+#accord1-1 .time-box >div:nth-child(3)::before {
+  content: "10:20";
+}
+.accord-tab.color-box.style-1 .time-box >div:nth-child(4),
+#accord1-1 .time-box >div:nth-child(4) {
+  flex-grow: 1;
+}
+.accord-tab.color-box.style-1 .time-box >div:nth-child(4)::before,
+#accord1-1 .time-box >div:nth-child(4)::before {
+  content: "10:30";
+}
+.accord-tab.color-box.style-1 .time-box >div:last-child::after,
+#accord1-1 .time-box >div:last-child::after {
+  content: "12:00";
+}
+/* .accord-tab.color-box.style-2 */
+.accord-tab.color-box.style-2 .time-box >div:nth-child(1) {
+  flex-grow: 1;
+}
+.accord-tab.color-box.style-2 .time-box >div:nth-child(2),
+.accord-tab.color-box.style-2 .time-box >div:nth-child(4) {
+  width: 60px;
+  padding: 0px 20px;
+}
+.accord-tab.color-box.style-2 .time-box >div:nth-child(3),
+.accord-tab.color-box.style-2 .time-box >div:nth-child(5) {
+  width: 220px;
+}
+
+.accord-tab.color-box.style-2 .time-box >div:nth-child(1)::before {
+  content: "13:00";
+}
+.accord-tab.color-box.style-2 .time-box >div:nth-child(2)::before {
+  content: "14:00";
+}
+.accord-tab.color-box.style-2 .time-box >div:nth-child(3)::before {
+  content: "14:10";
+}
+.accord-tab.color-box.style-2 .time-box >div:nth-child(4)::before {
+  content: "15:30";
+}
+.accord-tab.color-box.style-2 .time-box >div:nth-child(5)::before {
+  content: "15:40";
+}
+.accord-tab.color-box.style-2 .time-box >div:last-child::after {
+  content: "17:00";
 }
 /* main */
 main {

@@ -99,6 +99,7 @@
     background: url(../../assets/images/themes/banner3.jpg) no-repeat center center;
     background-size: cover;
 }
+#member-block6 .btn-style-4::after,
 .banner3-inner .btn-style-4::after {
     background: url(../../assets/images/icon/white_arg.png) no-repeat center center;
 }
@@ -180,3 +181,61 @@
 .founder-container .btn-style-2 {
     transform: translateY(30px);
 }
+
+/* member page */
+#nav-block .banner1 {
+    padding: 70px 0px 90px;
+    background: #ec5a24;
+    text-align: center;    
+}
+#nav-block .banner1 img {
+    margin: auto;
+}
+#nav-block .anchor-nav {
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+}
+#nav-block .anchor-nav .anchor-item {
+    width: 100%;
+    border-left: 2px solid #000;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#nav-block .anchor-nav .anchor-item ,
+#nav-block .anchor-nav .anchor-item:first-child {
+    position: relative;
+}
+#nav-block .anchor-nav .anchor-item:hover::before ,
+#nav-block .anchor-nav .anchor-item:first-child::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 80%;
+    height: 2px;
+    background: #ec5a24;
+}
+#nav-block .anchor-nav .anchor-item:last-child {
+    border-right: 2px solid #000;
+}
+#nav-block .anchor-nav .anchor-item .anchor-link {
+    display: block;
+    width: 100%;
+    color: #000;
+    line-height: 1;
+
+}
+ /* member-block6 */
+ #member-block6 .container {
+     background: url(../../assets/images/member_page/themes/bl6_banner.jpg)no-repeat center center;
+     background-size: cover;
+     margin-bottom: 90px;
+ }
