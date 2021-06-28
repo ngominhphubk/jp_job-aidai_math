@@ -50,15 +50,15 @@
                     <a href="" class="link-item">各部門内容</a>
                     <div class="sub-nav">
                         <div class="sub-nav-list">
-                            <a href="" class="sub-nav-item btn-style-1">
+                            <a href="#accord-1" class="sub-nav-item open-accord btn-style-1">
                                 <p>小学校部門</p>
                                 <img src="./assets/images/icon/orange-arg-sm.png" alt="">
                             </a>
-                            <a href="" class="sub-nav-item btn-style-1">
+                            <a href="#accord-2" class="sub-nav-item open-accord btn-style-1">
                                 <p>中学校部門</p>
                                 <img src="./assets/images/icon/orange-arg-sm.png" alt="">
                             </a>
-                            <a href="" class="sub-nav-item btn-style-1">
+                            <a href="#accord-3" class="sub-nav-item open-accord btn-style-1">
                                 <p>高等学校部門</p>
                                 <img src="./assets/images/icon/orange-arg-sm.png" alt="">
                             </a>
@@ -78,6 +78,39 @@
             } else {
                 down.removeClass('wide-full');
                 down.addClass('wide');
+            }
+        });
+
+
+
+        // Add smooth scrolling to all links
+        $("a[href^=\\#]").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                var width = $(window).width();
+                if (width <= 768 && $('body').hasClass('menu-open')) {
+                    //$('a.menu-btn').trigger('click');
+                }
+                // Prevent default anchor click behavior
+                event.preventDefault();
+                // Store hash
+                var hash = this.hash;
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: ( $(hash).offset().top - 80 )
+                }, 400, function () {
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    // window.location.hash = hash;
+                });
+            } // End if
+
+            if ( this.classList.contains('open-accord') ) {
+                var id = $(this).attr('href');
+                setTimeout(function () {
+                    $(id).addClass('active');
+                    $(id).find('.accord-content').slideDown();
+                }, 600);
             }
         });
     </script>
