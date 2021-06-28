@@ -1,0 +1,23 @@
+<div class="grid wide-full">
+    <div id="group" class="show"><a href="#"></a></div>
+      <script>
+  //Get the button:
+  var btn = $('#group');
+  
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+  
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+  </script> 
+  <div class="copy-right bgcl-2">
+      <p class="copy-right-text fs-16 fw-medium">(C) 2021 Chugoku-Shikoku Arithmetic and Mathematics Education and Research Conference.</p>
+  </div>
+</div>
