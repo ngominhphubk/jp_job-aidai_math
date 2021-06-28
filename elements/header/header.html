@@ -1,5 +1,5 @@
 <div class="header-container">
-    <div class="grid wide">
+    <div class="grid wide pt-20">
         <div class="row no-gutters">
             <div class="col l-6">
                 <div class="time-box">
@@ -15,19 +15,19 @@
             <div class="upper-list row m-8px">
                 <div class="col p-8">
                     <a href="" class="upper-list-item">
-                        <img src="../../assets/images/header/icon1.png" alt="">
+                        <img src="./assets/images/header/icon1.png" alt="">
                         <div class="pr-20">
-                        <p>大会参加の</p>
-                        <p>お申し込み</p>
+                            <p>大会参加の</p>
+                            <p>お申し込み</p>
                         </div>
-                        <img class="upper-list__icon-left"src="../../assets/images/icon/orange-arg.png" alt="">
+                        <img class="upper-list__icon-left" src="./assets/images/icon/orange-arg.png" alt="">
                     </a>
                 </div>
                 <div class="col p-8">
                     <a href="../../member.html" class="upper-list-item">
-                        <img src="../../assets/images/header/icon2.png" alt="">
+                        <img src="./assets/images/header/icon2.png" alt="">
                         <p>メンバー限定 ページ</p>
-                        <img class="upper-list__icon-left"src="../../assets/images/icon/orange-arg.png" alt="">
+                        <img class="upper-list__icon-left" src="./assets/images/icon/orange-arg.png" alt="">
                     </a>
                 </div>
                 <div class="col p-8">
@@ -36,7 +36,7 @@
                             <p>協賛企業募集中</p>
                             <p class="fs-11 p-relative">こちらからご連絡下さい</p>
                         </div>
-                        <img class="upper-list__icon-left"src="../../assets/images/icon/orange-arg.png" alt="">
+                        <img class="upper-list__icon-left" src="./assets/images/icon/orange-arg.png" alt="">
                     </a>
                 </div>
             </div>
@@ -52,15 +52,15 @@
                         <div class="sub-nav-list">
                             <a href="" class="sub-nav-item btn-style-1">
                                 <p>小学校部門</p>
-                                <img src="../../assets/images/icon/orange-arg-sm.png" alt="">
+                                <img src="./assets/images/icon/orange-arg-sm.png" alt="">
                             </a>
                             <a href="" class="sub-nav-item btn-style-1">
                                 <p>中学校部門</p>
-                                <img src="../../assets/images/icon/orange-arg-sm.png" alt="">
+                                <img src="./assets/images/icon/orange-arg-sm.png" alt="">
                             </a>
                             <a href="" class="sub-nav-item btn-style-1">
                                 <p>高等学校部門</p>
-                                <img src="../../assets/images/icon/orange-arg-sm.png" alt="">
+                                <img src="./assets/images/icon/orange-arg-sm.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -71,15 +71,14 @@
     </div>
     <script>
         var down = $('.main-nav');
-        $(window).scroll(function() {
-    if ($(window).scrollTop() > 120) {
-      down.addClass('wide-full');
-      down.removeClass('wide');
-    } else {
-      down.removeClass('wide-full');
-      down.addClass('wide');
-    }
-  });
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 200) {
+                down.addClass('wide-full');
+                down.removeClass('wide');
+            } else {
+                down.removeClass('wide-full');
+                down.addClass('wide');
+            }
+        });
     </script>
-
 </div>

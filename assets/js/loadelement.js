@@ -3,13 +3,13 @@
 if (window.location.hostname == "127.0.0.1") {
     var domain = '';
 }
-//  else if (window.location.hostname == "kataoka.a2ztech.vn") {
-//     var domain = 'https://kataoka.a2ztech.vn/';
-// } else if (window.location.hostname == "comotec.ne.jp") {
-//     var domain = 'https://comotec.ne.jp/test_space/test/kataoka/';
-// } else {
-//     var domain = 'http://www.kataoka.co.jp/';
-// }
+ else if (window.location.hostname == "aidai.a2ztech.vn") {
+    var domain = 'https://aidai.a2ztech.vn/';
+} else if (window.location.hostname == "comotec.ne.jp") {
+    var domain = 'https://comotec.ne.jp/test_space/test/kataoka/';
+} else {
+    var domain = 'http://www.kataoka.co.jp/';
+}
 
 loadelement = {
     init: function () {
